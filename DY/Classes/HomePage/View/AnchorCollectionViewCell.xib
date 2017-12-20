@@ -23,7 +23,7 @@
                         <rect key="frame" x="0.0" y="129" width="14" height="14"/>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="瓦萨大所安达市大太大上传萨达所大所大阿斯达撒阿斯达" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="viI-KZ-lgh">
-                        <rect key="frame" x="14" y="128.5" width="274" height="14.5"/>
+                        <rect key="frame" x="17" y="128.5" width="271" height="14.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
@@ -35,7 +35,7 @@
                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                 <integer key="value" value="5"/>
                             </userDefinedRuntimeAttribute>
-                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                         </userDefinedRuntimeAttributes>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="万在线" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s5C-fO-jW4">
@@ -62,7 +62,7 @@
                 <constraint firstItem="1T9-1e-U2g" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Vek-TF-V7F"/>
                 <constraint firstAttribute="trailing" secondItem="1T9-1e-U2g" secondAttribute="trailing" id="W5g-P4-uLH"/>
                 <constraint firstItem="s5C-fO-jW4" firstAttribute="trailing" secondItem="1T9-1e-U2g" secondAttribute="trailing" constant="-5" id="dsu-pg-gv7"/>
-                <constraint firstItem="viI-KZ-lgh" firstAttribute="leading" secondItem="DGL-zc-8eU" secondAttribute="trailing" id="eHI-UC-hG1"/>
+                <constraint firstItem="viI-KZ-lgh" firstAttribute="leading" secondItem="DGL-zc-8eU" secondAttribute="trailing" constant="3" id="eHI-UC-hG1"/>
                 <constraint firstAttribute="bottom" secondItem="DGL-zc-8eU" secondAttribute="bottom" id="jHo-jP-Stc"/>
                 <constraint firstItem="DGL-zc-8eU" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="mPD-oS-Pgo"/>
                 <constraint firstItem="s5C-fO-jW4" firstAttribute="bottom" secondItem="1T9-1e-U2g" secondAttribute="bottom" constant="-5" id="x31-CZ-LSF"/>
