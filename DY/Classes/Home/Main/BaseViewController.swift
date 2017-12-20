@@ -11,13 +11,19 @@ import UIKit
 class BaseViewController: UIViewController {
 
     /// 在对一个的闭包中必须用self,防止循环引用
-    lazy fileprivate var aniImageView : UIImageView = {[unowned self] in
+    fileprivate lazy var aniImageView : UIImageView = {[unowned self] in
         let imageView = UIImageView(image: UIImage(named:"img_loading_1"))
         imageView.animationImages = [UIImage(named:"img_loading_1")!,UIImage(named:"img_loading_2")!]
         imageView.center = self.view.center
         imageView.animationDuration = 0.5
         imageView.animationRepeatCount = LONG_MAX
         imageView.autoresizingMask = [.flexibleTopMargin,.flexibleBottomMargin]
+        return imageView
+    }()
+
+    fileprivate lazy var errorPlaceholderImageView : UIImageView = { [unowned self] in
+        let imageView = UIImageView(image: UIImage(named: ""))
+
         return imageView
     }()
 
@@ -46,5 +52,12 @@ extension BaseViewController {
         aniImageView.stopAnimating()
         aniImageView.isHidden = true
         contentView?.isHidden = false
+    }
+
+    func finishLoadErrorData(_ reloadCallBack :() -> ()) {
+        aniImageView.stopAnimating()
+        aniImageView.isHidden = true
+        contentView?.isHidden = true
+        
     }
 }

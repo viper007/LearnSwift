@@ -12,6 +12,8 @@
 		F607F8691FE21902003B5A66 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F607F8681FE21902003B5A66 /* AppDelegate.swift */; };
 		F607F8701FE21902003B5A66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F607F86F1FE21902003B5A66 /* Assets.xcassets */; };
 		F607F8731FE21902003B5A66 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F607F8711FE21902003B5A66 /* LaunchScreen.storyboard */; };
+		F61716691FEA553E005BC409 /* CycleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61716671FEA553E005BC409 /* CycleCollectionViewCell.swift */; };
+		F617166A1FEA553E005BC409 /* CycleCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F61716681FEA553E005BC409 /* CycleCollectionViewCell.xib */; };
 		F63027B31FE762B500884611 /* Macro.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63027B21FE762B500884611 /* Macro.swift */; };
 		F63027B71FE763EC00884611 /* RoomPushViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63027B61FE763EC00884611 /* RoomPushViewController.swift */; };
 		F63027B91FE7689D00884611 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63027B81FE7689D00884611 /* BaseViewController.swift */; };
@@ -28,6 +30,8 @@
 		F65CCB471FE251760064B408 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65CCB461FE251760064B408 /* MainViewController.swift */; };
 		F65CCB491FE256A80064B408 /* CustomNavgationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65CCB481FE256A80064B408 /* CustomNavgationController.swift */; };
 		F65CCB4C1FE25BCA0064B408 /* UIBarButtonItem+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65CCB4B1FE25BCA0064B408 /* UIBarButtonItem+extension.swift */; };
+		F6806A2D1FEA432A00B9C1AD /* CycleGroupModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6806A2C1FEA432A00B9C1AD /* CycleGroupModel.swift */; };
+		F6806A2F1FEA468400B9C1AD /* CycleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6806A2E1FEA468400B9C1AD /* CycleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +63,8 @@
 		F607F8741FE21902003B5A66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F607F8791FE21902003B5A66 /* DYTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DYTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F607F8841FE21902003B5A66 /* DYUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DYUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F61716671FEA553E005BC409 /* CycleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CycleCollectionViewCell.swift; sourceTree = "<group>"; };
+		F61716681FEA553E005BC409 /* CycleCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CycleCollectionViewCell.xib; sourceTree = "<group>"; };
 		F63027B21FE762B500884611 /* Macro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Macro.swift; sourceTree = "<group>"; };
 		F63027B61FE763EC00884611 /* RoomPushViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomPushViewController.swift; sourceTree = "<group>"; };
 		F63027B81FE7689D00884611 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
@@ -75,6 +81,8 @@
 		F65CCB461FE251760064B408 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		F65CCB481FE256A80064B408 /* CustomNavgationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavgationController.swift; sourceTree = "<group>"; };
 		F65CCB4B1FE25BCA0064B408 /* UIBarButtonItem+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+extension.swift"; sourceTree = "<group>"; };
+		F6806A2C1FEA432A00B9C1AD /* CycleGroupModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CycleGroupModel.swift; sourceTree = "<group>"; };
+		F6806A2E1FEA468400B9C1AD /* CycleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CycleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -298,6 +306,7 @@
 			children = (
 				F63027CA1FE7B40200884611 /* AnchorGrounp.swift */,
 				F63027CC1FE7B40D00884611 /* AnchorModel.swift */,
+				F6806A2C1FEA432A00B9C1AD /* CycleGroupModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -308,6 +317,9 @@
 				F63027BC1FE78FA700884611 /* PageScrollTitleView.swift */,
 				F63027C01FE7A79700884611 /* AnchorCollectionViewCell.swift */,
 				F63027C11FE7A79700884611 /* AnchorCollectionViewCell.xib */,
+				F6806A2E1FEA468400B9C1AD /* CycleView.swift */,
+				F61716671FEA553E005BC409 /* CycleCollectionViewCell.swift */,
+				F61716681FEA553E005BC409 /* CycleCollectionViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -443,6 +455,7 @@
 				F63027C31FE7A79700884611 /* AnchorCollectionViewCell.xib in Resources */,
 				F607F8731FE21902003B5A66 /* LaunchScreen.storyboard in Resources */,
 				F607F8701FE21902003B5A66 /* Assets.xcassets in Resources */,
+				F617166A1FEA553E005BC409 /* CycleCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -526,6 +539,7 @@
 				F607F8691FE21902003B5A66 /* AppDelegate.swift in Sources */,
 				F63027B31FE762B500884611 /* Macro.swift in Sources */,
 				F605F8821FE22DA700CBE5CC /* NetworkTools.swift in Sources */,
+				F61716691FEA553E005BC409 /* CycleCollectionViewCell.swift in Sources */,
 				F63C7F9C1FE8B84B00EFAC5B /* QRCodeViewController.swift in Sources */,
 				F63027B71FE763EC00884611 /* RoomPushViewController.swift in Sources */,
 				F65CCB451FE251350064B408 /* HomeViewController.swift in Sources */,
@@ -538,7 +552,9 @@
 				F63027BB1FE76ED300884611 /* UIColor+Extension.swift in Sources */,
 				F63027C91FE7B0B000884611 /* Date+Extension.swift in Sources */,
 				F63027C21FE7A79700884611 /* AnchorCollectionViewCell.swift in Sources */,
+				F6806A2F1FEA468400B9C1AD /* CycleView.swift in Sources */,
 				F63027C51FE7AF9000884611 /* RecommendViewModel.swift in Sources */,
+				F6806A2D1FEA432A00B9C1AD /* CycleGroupModel.swift in Sources */,
 				F63027CB1FE7B40200884611 /* AnchorGrounp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

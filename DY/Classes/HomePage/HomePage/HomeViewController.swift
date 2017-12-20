@@ -11,6 +11,8 @@ import UIKit
 let kItemMargin:CGFloat = 10
 let kNormalItemW = (kScreenW - 3*kItemMargin) / 2
 let kNormalItemH = kNormalItemW * 3 / 4
+let kCycleViewH = kScreenW * 3 / 8
+let kSectionTopH : CGFloat = 10.0
 private let cellID = "cellID"
 
 class HomeViewController: BaseViewController {
@@ -18,13 +20,13 @@ class HomeViewController: BaseViewController {
     fileprivate lazy var collectionView : UICollectionView? = {
         let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
         layout.itemSize = CGSize(width: kNormalItemW, height: kNormalItemH)
-        layout.sectionInset = UIEdgeInsets(top: 0, left: kItemMargin, bottom: 0, right: kItemMargin)
+        layout.sectionInset = UIEdgeInsets(top: kSectionTopH, left: kItemMargin, bottom: 0, right: kItemMargin)
         let tempCollectionView = UICollectionView(frame: CGRect.init(x: 0.0, y: kPageTitileH + kStatusH + kNavgatH, width: kScreenW, height: self.view.frame.size.height - (kPageTitileH + kStatusH + kNavgatH + kTabbarH)), collectionViewLayout: layout)
         tempCollectionView.backgroundColor = UIColor.white
         tempCollectionView.alwaysBounceVertical = true
         tempCollectionView.dataSource = self
         tempCollectionView.delegate = self
-        tempCollectionView.contentInset = UIEdgeInsets(top: 2, left: 0, bottom: 10, right: 0)
+        tempCollectionView.contentInset = UIEdgeInsets(top: kCycleViewH, left: 0, bottom: 10, right: 0)
         tempCollectionView.register(UINib(nibName: "AnchorCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: cellID)
         return tempCollectionView
     }()
@@ -33,6 +35,12 @@ class HomeViewController: BaseViewController {
         let pageView = PageScrollTitleView(frame: CGRect(x: 0, y: kStatusH + kNavgatH, width: kScreenW, height: kPageTitileH), titles: ["推荐","游戏","娱乐","趣玩"])
         pageView.backgroundColor = UIColor.white
         return pageView
+    }()
+
+    fileprivate lazy var cycleView : CycleView = {
+        let cycleView = CycleView(frame: CGRect(x: 0, y: -kCycleViewH, width: kScreenW, height: kCycleViewH))
+        cycleView.backgroundColor = UIColor.yellow
+        return cycleView
     }()
 
     var requestVM = RecommendViewModel()
@@ -70,10 +78,17 @@ extension HomeViewController {
         contentView = collectionView
         view.addSubview(contentView!)
         super.setupUI()
-        requestVM.requestAnchorData {
+        requestVM.requestAnchorData({
             self.finishLoadData()
             self.view.addSubview(self.pageTitleView)
+            self.collectionView?.addSubview(self.cycleView)
+            self.cycleView.cycleModels = self.requestVM.cyclesArray
             self.collectionView?.reloadData()
+        }) { (error) in
+            //请求错误信息展示对应的错位展位图等信息
+            self.finishLoadErrorData({
+                 print("itemAny")
+            })
         }
     }
 }
