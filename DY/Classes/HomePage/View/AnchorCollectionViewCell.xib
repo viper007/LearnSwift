@@ -44,8 +44,9 @@
                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MsV-ZD-IvN">
-                        <rect key="frame" x="5" y="105.5" width="33" height="16"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="someday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MsV-ZD-IvN">
+                        <rect key="frame" x="5" y="105.5" width="55" height="16"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
@@ -65,6 +66,7 @@
                 <constraint firstItem="viI-KZ-lgh" firstAttribute="leading" secondItem="DGL-zc-8eU" secondAttribute="trailing" constant="3" id="eHI-UC-hG1"/>
                 <constraint firstAttribute="bottom" secondItem="DGL-zc-8eU" secondAttribute="bottom" id="jHo-jP-Stc"/>
                 <constraint firstItem="DGL-zc-8eU" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="mPD-oS-Pgo"/>
+                <constraint firstItem="s5C-fO-jW4" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="MsV-ZD-IvN" secondAttribute="trailing" constant="10" id="oyd-vb-Od7"/>
                 <constraint firstItem="s5C-fO-jW4" firstAttribute="bottom" secondItem="1T9-1e-U2g" secondAttribute="bottom" constant="-5" id="x31-CZ-LSF"/>
                 <constraint firstItem="MsV-ZD-IvN" firstAttribute="leading" secondItem="1T9-1e-U2g" secondAttribute="leading" constant="5" id="ysF-b3-Hj6"/>
             </constraints>
@@ -76,7 +78,7 @@
                 <outlet property="onlneLabel" destination="s5C-fO-jW4" id="v02-va-1gt"/>
                 <outlet property="roomNameLabel" destination="MsV-ZD-IvN" id="0Q7-wf-Tc3"/>
             </connections>
-            <point key="canvasLocation" x="-18" y="21.5"/>
+            <point key="canvasLocation" x="7" y="-198"/>
         </collectionViewCell>
     </objects>
     <resources>

@@ -25,9 +25,9 @@ class CustomNavgationController: UINavigationController {
 //            let name = ivar_getName(ivar)
 //            print(String(cString: name!))
 //        }
+//        free(ivars)
         let targets = sysGes.value(forKey: "_targets") as? [NSObject]
         guard let targetDic = targets?.first else {return}
-
         //取出target
         guard let target = targetDic.value(forKey: "target") else {return}
         let action = Selector(("handleNavigationTransition:"))

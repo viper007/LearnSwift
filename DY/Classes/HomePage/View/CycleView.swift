@@ -14,12 +14,21 @@ let kCycleCellID : String = "kCycleCellID"
 class CycleView: UIView {
 
     fileprivate var timer : Timer?
+    fileprivate var pageControl : UIPageControl = {
+        let pageCon = UIPageControl()
+        pageCon.hidesForSinglePage = true
+        pageCon.currentPageIndicatorTintColor = UIColor.white
+        pageCon.currentPageIndicatorTintColor = UIColor.orange
+        return pageCon
+    }()
     var cycleModels : [CycleGroupModel] = [CycleGroupModel]() {
         didSet {
             collectionView.scrollToItem(at:IndexPath(item: kCycleCount/2, section: 0),  at: UICollectionViewScrollPosition.centeredHorizontally, animated: false)
             stopTimer()
             startTimer()
             collectionView.reloadData()
+            pageControl.currentPage = 0
+            pageControl.numberOfPages = cycleModels.count
         }
     }
     
@@ -39,7 +48,8 @@ class CycleView: UIView {
         super.init(frame: frame)
         backgroundColor = UIColor.gray
         addSubview(collectionView)
-
+        pageControl.frame = CGRect(x: 0, y: frame.size.height - 30, width: kScreenW, height: 30)
+        addSubview(pageControl)
     }
 
     required init?(coder aDecoder: NSCoder) {
@@ -67,7 +77,7 @@ extension CycleView : UICollectionViewDataSource,UICollectionViewDelegate {
          stopTimer()
     }
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
-
+         
     }
     func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
         startTimer()
@@ -85,7 +95,12 @@ extension CycleView {
     }
     @objc fileprivate func autoScroll() {
        var offsetX = collectionView.contentOffset.x
-       offsetX += collectionView.frame.size.width
-       collectionView.setContentOffset(CGPoint(x: offsetX, y: 0), animated: true)
+        offsetX += collectionView.frame.size.width
+        collectionView.setContentOffset(CGPoint(x: offsetX, y: 0), animated: true)
+        if pageControl.currentPage >= pageControl.numberOfPages-1 {
+            pageControl.currentPage = 0
+            return
+        }
+        pageControl.currentPage += 1
     }
 }

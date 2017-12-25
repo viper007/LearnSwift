@@ -11,7 +11,8 @@ import UIKit
 let kPageTitileH : CGFloat = 44.0
 private let kIndiactorH : CGFloat = 2.0
 
-protocol PageScrollTitleViewDelegate {
+/// 类协议需要在前面添加对应的@objc
+@objc protocol PageScrollTitleViewDelegate {
      func pageTitleView(_ titleView : PageScrollTitleView, selectedIndex index : Int)
 }
 
@@ -20,6 +21,8 @@ class PageScrollTitleView: UIView {
     var titles : [String] = [String]()
     let indicator : UIView = UIView()
     var preLabel = UILabel()
+    weak open var delegate: PageScrollTitleViewDelegate?
+    private var labels = [UILabel]()
     //MARK: - 初始化方法
     init(frame: CGRect,titles: [String]) {
         super.init(frame: frame)
@@ -39,6 +42,7 @@ class PageScrollTitleView: UIView {
             label.isUserInteractionEnabled = true
             let tapGes = UITapGestureRecognizer(target: self, action: #selector(tapTitlelabel(_:)))
             label.addGestureRecognizer(tapGes)
+            labels.append(label)
             if index == 0 {
                 tapTitlelabel(tapGes)
             }
@@ -56,10 +60,16 @@ class PageScrollTitleView: UIView {
     @objc func tapTitlelabel(_ tapGes : UITapGestureRecognizer) {
         preLabel.textColor = UIColor.gray
         let label = tapGes.view as! UILabel
+        let index = labels.index(of: label)!
         label.textColor = UIColor.orange
         preLabel = label
         UIView.animate(withDuration: 0.25) {
             self.indicator.center.x = label.center.x
         }
+        guard (self.delegate) != nil else {return}
+        delegate?.pageTitleView(self, selectedIndex: index)
+//        if delegate != nil {
+//            delegate?.pageTitleView(self, selectedIndex: index)
+//        }
     }
 }

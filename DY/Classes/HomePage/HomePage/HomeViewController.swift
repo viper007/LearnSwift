@@ -17,6 +17,8 @@ private let cellID = "cellID"
 
 class HomeViewController: BaseViewController {
 
+
+
     fileprivate lazy var collectionView : UICollectionView? = {
         let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
         layout.itemSize = CGSize(width: kNormalItemW, height: kNormalItemH)
@@ -34,6 +36,7 @@ class HomeViewController: BaseViewController {
     fileprivate lazy var pageTitleView : PageScrollTitleView = {
         let pageView = PageScrollTitleView(frame: CGRect(x: 0, y: kStatusH + kNavgatH, width: kScreenW, height: kPageTitileH), titles: ["推荐","游戏","娱乐","趣玩"])
         pageView.backgroundColor = UIColor.white
+        pageView.delegate = self
         return pageView
     }()
 
@@ -119,6 +122,12 @@ extension HomeViewController : UICollectionViewDelegate {
     }
     func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
 
+    }
+}
+
+extension HomeViewController : PageScrollTitleViewDelegate {
+    func pageTitleView(_ titleView: PageScrollTitleView, selectedIndex index: Int) {
+        print(index)
     }
 }
 

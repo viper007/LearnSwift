@@ -22,6 +22,7 @@ class MainViewController: UITabBarController {
 }
 
 extension MainViewController {
+
     fileprivate func setupTabControllers() {
         tabBar.backgroundColor = UIColor.white
         let homeNav =  CustomNavgationController.init(rootViewController: HomeViewController())
@@ -32,7 +33,7 @@ extension MainViewController {
         VC.tabBarItem.image = UIImage.init(named: normal)
         VC.tabBarItem.selectedImage = UIImage.init(named: selected)
         VC.tabBarItem.title = title
-        VC.tabBarItem.setTitleTextAttributes([.foregroundColor:UIColor.orange], for: .selected)
+    VC.tabBarItem.setTitleTextAttributes([.foregroundColor:UIColor.orange], for: .selected)
         self.addChildViewController(VC)
     }
 }
