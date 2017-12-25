@@ -15,4 +15,11 @@ extension Date {
         let time = Int(date.timeIntervalSince1970)
         return "\(time)"
     }
+    //201406151112
+    static func getCurrentFormatterTime() -> String {
+        let date = Date()
+        let fmt = DateFormatter()
+        fmt.dateFormat = "yyyyMMddHHmm"
+        return fmt.string(from: date)
+    }
 }

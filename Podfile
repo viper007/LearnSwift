@@ -7,5 +7,6 @@ target 'DY' do
  
  pod 'Alamofire'
  pod 'Kingfisher'
+ pod 'SnapKit', '~> 4.0.0'
  
 end

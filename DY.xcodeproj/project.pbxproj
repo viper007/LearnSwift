@@ -32,6 +32,21 @@
 		F65CCB4C1FE25BCA0064B408 /* UIBarButtonItem+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65CCB4B1FE25BCA0064B408 /* UIBarButtonItem+extension.swift */; };
 		F6806A2D1FEA432A00B9C1AD /* CycleGroupModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6806A2C1FEA432A00B9C1AD /* CycleGroupModel.swift */; };
 		F6806A2F1FEA468400B9C1AD /* CycleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6806A2E1FEA468400B9C1AD /* CycleView.swift */; };
+		F6B168AA1FF08F7700321CA7 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B168A91FF08F7700321CA7 /* String+Extension.swift */; };
+		F6DBFE091FEB88EE00B31DDB /* AllInstanceVariablesTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DBFE081FEB88EE00B31DDB /* AllInstanceVariablesTool.swift */; };
+		F6EBE2CB1FEC98B600051673 /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6EBE2CA1FEC98B600051673 /* IJKMediaFramework.framework */; };
+		F6EBE2CE1FEC9C9E00051673 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6EBE2CD1FEC9C9E00051673 /* VideoToolbox.framework */; };
+		F6EBE2D01FEC9CAD00051673 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6EBE2CF1FEC9CAD00051673 /* AudioToolbox.framework */; };
+		F6EBE2D21FEC9CB900051673 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6EBE2D11FEC9CB900051673 /* QuartzCore.framework */; };
+		F6EBE2D41FEC9CC100051673 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6EBE2D31FEC9CC100051673 /* OpenGLES.framework */; };
+		F6EBE2D61FEC9CC800051673 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6EBE2D51FEC9CC800051673 /* MobileCoreServices.framework */; };
+		F6EBE2D81FEC9CD300051673 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6EBE2D71FEC9CD300051673 /* MediaPlayer.framework */; };
+		F6EBE2DA1FEC9CDF00051673 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F6EBE2D91FEC9CDF00051673 /* libz.tbd */; };
+		F6EBE2DC1FEC9CE500051673 /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F6EBE2DB1FEC9CE500051673 /* libbz2.tbd */; };
+		F6EBE2DE1FEC9CEC00051673 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6EBE2DD1FEC9CEC00051673 /* CoreVideo.framework */; };
+		F6EBE2E01FEC9CF400051673 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6EBE2DF1FEC9CF400051673 /* CoreMedia.framework */; };
+		F6EBE2E21FEC9CFB00051673 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6EBE2E11FEC9CFB00051673 /* CoreGraphics.framework */; };
+		F6EBE2E41FEC9D0200051673 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6EBE2E31FEC9D0200051673 /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +98,24 @@
 		F65CCB4B1FE25BCA0064B408 /* UIBarButtonItem+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+extension.swift"; sourceTree = "<group>"; };
 		F6806A2C1FEA432A00B9C1AD /* CycleGroupModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CycleGroupModel.swift; sourceTree = "<group>"; };
 		F6806A2E1FEA468400B9C1AD /* CycleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CycleView.swift; sourceTree = "<group>"; };
+		F6B168A71FF08AA400321CA7 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		F6B168A81FF08ABE00321CA7 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		F6B168A91FF08F7700321CA7 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		F6DBFE081FEB88EE00B31DDB /* AllInstanceVariablesTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllInstanceVariablesTool.swift; sourceTree = "<group>"; };
+		F6EBE2CA1FEC98B600051673 /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IJKMediaFramework.framework; sourceTree = "<group>"; };
+		F6EBE2CC1FEC9A0A00051673 /* DY-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DY-Bridging-Header.h"; sourceTree = "<group>"; };
+		F6EBE2CD1FEC9C9E00051673 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		F6EBE2CF1FEC9CAD00051673 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		F6EBE2D11FEC9CB900051673 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		F6EBE2D31FEC9CC100051673 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		F6EBE2D51FEC9CC800051673 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		F6EBE2D71FEC9CD300051673 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		F6EBE2D91FEC9CDF00051673 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		F6EBE2DB1FEC9CE500051673 /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
+		F6EBE2DD1FEC9CEC00051673 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		F6EBE2DF1FEC9CF400051673 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		F6EBE2E11FEC9CFB00051673 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F6EBE2E31FEC9D0200051673 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,7 +123,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6EBE2E41FEC9D0200051673 /* AVFoundation.framework in Frameworks */,
+				F6EBE2E21FEC9CFB00051673 /* CoreGraphics.framework in Frameworks */,
+				F6EBE2E01FEC9CF400051673 /* CoreMedia.framework in Frameworks */,
+				F6EBE2DE1FEC9CEC00051673 /* CoreVideo.framework in Frameworks */,
+				F6EBE2DC1FEC9CE500051673 /* libbz2.tbd in Frameworks */,
+				F6EBE2DA1FEC9CDF00051673 /* libz.tbd in Frameworks */,
+				F6EBE2D81FEC9CD300051673 /* MediaPlayer.framework in Frameworks */,
+				F6EBE2D61FEC9CC800051673 /* MobileCoreServices.framework in Frameworks */,
+				F6EBE2D41FEC9CC100051673 /* OpenGLES.framework in Frameworks */,
+				F6EBE2D21FEC9CB900051673 /* QuartzCore.framework in Frameworks */,
+				F6EBE2D01FEC9CAD00051673 /* AudioToolbox.framework in Frameworks */,
+				F6EBE2CE1FEC9C9E00051673 /* VideoToolbox.framework in Frameworks */,
 				AE0BD7F6972C411DA68F3681 /* Pods_DY.framework in Frameworks */,
+				F6EBE2CB1FEC98B600051673 /* IJKMediaFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,6 +160,18 @@
 		49C13839F142BA15A760A222 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F6EBE2E31FEC9D0200051673 /* AVFoundation.framework */,
+				F6EBE2E11FEC9CFB00051673 /* CoreGraphics.framework */,
+				F6EBE2DF1FEC9CF400051673 /* CoreMedia.framework */,
+				F6EBE2DD1FEC9CEC00051673 /* CoreVideo.framework */,
+				F6EBE2DB1FEC9CE500051673 /* libbz2.tbd */,
+				F6EBE2D91FEC9CDF00051673 /* libz.tbd */,
+				F6EBE2D71FEC9CD300051673 /* MediaPlayer.framework */,
+				F6EBE2D51FEC9CC800051673 /* MobileCoreServices.framework */,
+				F6EBE2D31FEC9CC100051673 /* OpenGLES.framework */,
+				F6EBE2D11FEC9CB900051673 /* QuartzCore.framework */,
+				F6EBE2CF1FEC9CAD00051673 /* AudioToolbox.framework */,
+				F6EBE2CD1FEC9C9E00051673 /* VideoToolbox.framework */,
 				64D1431BB2D59C66AF654AAE /* Pods_DY.framework */,
 			);
 			name = Frameworks;
@@ -188,6 +246,7 @@
 				F65CCB4A1FE25B410064B408 /* Category */,
 				F605F8811FE22DA700CBE5CC /* NetworkTools.swift */,
 				F63027B21FE762B500884611 /* Macro.swift */,
+				F6DBFE081FEB88EE00B31DDB /* AllInstanceVariablesTool.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -217,7 +276,9 @@
 			children = (
 				F605F87A1FE22D8100CBE5CC /* Classes */,
 				F605F8801FE22D8100CBE5CC /* Tools */,
+				F6B168A41FF08A6000321CA7 /* Modules */,
 				F607F8681FE21902003B5A66 /* AppDelegate.swift */,
+				F6EBE2CC1FEC9A0A00051673 /* DY-Bridging-Header.h */,
 				F607F86F1FE21902003B5A66 /* Assets.xcassets */,
 				F607F8711FE21902003B5A66 /* LaunchScreen.storyboard */,
 				F607F8741FE21902003B5A66 /* Info.plist */,
@@ -330,13 +391,40 @@
 				F65CCB4B1FE25BCA0064B408 /* UIBarButtonItem+extension.swift */,
 				F63027BA1FE76ED300884611 /* UIColor+Extension.swift */,
 				F63027C81FE7B0B000884611 /* Date+Extension.swift */,
+				F6B168A91FF08F7700321CA7 /* String+Extension.swift */,
 			);
 			path = Category;
+			sourceTree = "<group>";
+		};
+		F6B168A41FF08A6000321CA7 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				F6B168A61FF08A8F00321CA7 /* iphoneOS */,
+				F6B168A51FF08A8F00321CA7 /* iphoneSimulator */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		F6B168A51FF08A8F00321CA7 /* iphoneSimulator */ = {
+			isa = PBXGroup;
+			children = (
+				F6B168A81FF08ABE00321CA7 /* module.modulemap */,
+			);
+			path = iphoneSimulator;
+			sourceTree = "<group>";
+		};
+		F6B168A61FF08A8F00321CA7 /* iphoneOS */ = {
+			isa = PBXGroup;
+			children = (
+				F6B168A71FF08AA400321CA7 /* module.modulemap */,
+			);
+			path = iphoneOS;
 			sourceTree = "<group>";
 		};
 		F6F337B01FE8F45E009C9EDC /* ThirdPart */ = {
 			isa = PBXGroup;
 			children = (
+				F6EBE2CA1FEC98B600051673 /* IJKMediaFramework.framework */,
 			);
 			name = ThirdPart;
 			path = DY/ThirdPart;
@@ -518,11 +606,13 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-DY/Pods-DY-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -548,6 +638,7 @@
 				F65CCB4C1FE25BCA0064B408 /* UIBarButtonItem+extension.swift in Sources */,
 				F63027CD1FE7B40D00884611 /* AnchorModel.swift in Sources */,
 				F65CCB491FE256A80064B408 /* CustomNavgationController.swift in Sources */,
+				F6B168AA1FF08F7700321CA7 /* String+Extension.swift in Sources */,
 				F63027BD1FE78FA700884611 /* PageScrollTitleView.swift in Sources */,
 				F63027BB1FE76ED300884611 /* UIColor+Extension.swift in Sources */,
 				F63027C91FE7B0B000884611 /* Date+Extension.swift in Sources */,
@@ -555,6 +646,7 @@
 				F6806A2F1FEA468400B9C1AD /* CycleView.swift in Sources */,
 				F63027C51FE7AF9000884611 /* RecommendViewModel.swift in Sources */,
 				F6806A2D1FEA432A00B9C1AD /* CycleGroupModel.swift in Sources */,
+				F6DBFE091FEB88EE00B31DDB /* AllInstanceVariablesTool.swift in Sources */,
 				F63027CB1FE7B40200884611 /* AnchorGrounp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -727,6 +819,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = lvzhenhua.DY;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/DY/DY-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -752,6 +845,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = lvzhenhua.DY;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/DY/DY-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

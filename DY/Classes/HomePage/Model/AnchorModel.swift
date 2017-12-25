@@ -15,7 +15,7 @@ class AnchorModel: NSObject {
     @objc var nickname : String = ""
     @objc var room_name : String = ""
     @objc var isVertical : Bool = false
-
+    @objc var anchor_city : String?
     init(_ dict:[String : NSObject]) {
         super.init()
         setValuesForKeys(dict)

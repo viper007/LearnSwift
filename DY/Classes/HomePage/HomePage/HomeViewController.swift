@@ -12,7 +12,7 @@ let kItemMargin:CGFloat = 10
 let kNormalItemW = (kScreenW - 3*kItemMargin) / 2
 let kNormalItemH = kNormalItemW * 3 / 4
 let kCycleViewH = kScreenW * 3 / 8
-let kSectionTopH : CGFloat = 10.0
+let kSectionTopH : CGFloat = 30
 private let cellID = "cellID"
 
 class HomeViewController: BaseViewController {
@@ -58,7 +58,6 @@ class HomeViewController: BaseViewController {
 
 //MARK: - 设置UI
 extension HomeViewController {
-
     func setNavgationBar() {
         view.backgroundColor = UIColor.white
         let logoSize : CGSize = CGSize(width: 66, height: 26)
@@ -94,7 +93,14 @@ extension HomeViewController {
 }
 //MARK: - UICollectionViewDataSource
 extension HomeViewController: UICollectionViewDataSource {
+
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 2
+    }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        if section == 0 {
+            return requestVM.prettyArray.count
+        }
         return requestVM.anchorArray.count
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -106,9 +112,13 @@ extension HomeViewController: UICollectionViewDataSource {
 
 //MARK: - UICollectionViewDelegate
 extension HomeViewController : UICollectionViewDelegate {
+
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let room = RoomPushViewController()
         navigationController?.pushViewController(room, animated: true)
+    }
+    func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
+
     }
 }
 
